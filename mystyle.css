@@ -1,34 +1,60 @@
-
+#myLogo {
+    position:absolute;
+    left:0;
+    top:0;
+}
 #myHeader {
-    color: #66ff66;
+   color: #333300;
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 40px;
     text-align: right;
     background-color:#66ccff;
+    font-weight: bold;
 }
 #liHome {
-    background-color: #ff66bf;
+   /*
+   background-color: #ff66bf;
+*/
 }
+
 li{
-    margin: 13px 0;
+    background-color: rgb(192, 192, 192);
+    margin: 30px 0;
     font-family: Comic Sans MS, Comic Sans, cursive;
-    color: purple;
+    color: black;
     text-decoration: none;
-
+    list-style: none;
+    font-weight: 900;
   }
+/*
+#myPost {
+display: none;
+}
+*/
 
-p {
+
+#pageTitle {
+    text-align: right;
     font-family: Comic Sans MS, Comic Sans, cursive;
+    margin: -5px 0;
 }
 #pageAbout {
     text-align: right;
     font-family: Comic Sans MS, Comic Sans, cursive;
+    margin: -5px 0;
 }
-#pageTitle {
+#pageAuthor {
     text-align: right;
     font-family: Comic Sans MS, Comic Sans, cursive;
+    margin: 0px 0;
+
 }
-#myPhotos {
+p {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding-left: 50px;
+}
+#myPhotos{
+    
     float: right;
     
 } 

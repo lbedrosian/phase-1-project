@@ -1,3 +1,5 @@
+  alert("JavaScript File Loaded");
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

@@ -3,11 +3,20 @@
     <head>
         <title>Asylum Seeker</title>
         <link rel="stylesheet" href="mystyle.css">
-        <script type="javascript" src="myJavaScript.js"></script>
-    </head>
+        <script src="js/myJavaScript.js"></script>    </head>
 <body>
+    
     <h1 id="myHeader">Asylum Seeker</h1>
-        <ul>
+    <!--
+        <img class="myLogo" src="images/imageLogo.jpg" width="150" height="100>
+    -->
+        <div style="
+        display: flex;
+        justify-content: space-between;
+        padding-right: 100px;">
+
+    <div class="nav">
+    <ul>
             <li id="liHome"><a href="#home">Home</a></li>
             <li><a href="#winter">Winter</a></li>
             <li><a href="#spring">Sping</a></li>
@@ -15,21 +24,15 @@
             <li><a href="#fall">Fall</a></li>   
             <li><a href="#about">About</a></li>
         </ul>
+     </div>  
         <!--Adventure-->
+    <div class="post">
     <h2 id="pageTitle">Dolly Sods, WV</h2>
     <h4 id="pageAbout">26/10/2021-28/10/2021</h4>
-    
-    <img id="myPhotos" src="images/IMG_0998.jpeg" width="350" height="250">
-    <!--<img id="myPhotos" src="images/IMG_0999.jpeg" width="350" height="250">
-    <img id="myPhotos" src="images/IMG_1006.jpeg" width="350" height="250">
-    <img id="myPhotos" src="images/IMG_1013.jpeg" width="350" height="250">
-    <img id="myPhotos" src="images/IMG_1016.jpeg" width="350" height="250">
-    <img id="myPhotos" src="images/IMG_1020.jpeg" width="350" height="250">
-    <img id="myPhotos" src="images/IMG_1024.jpeg" width="350" height="250">
-    -->
-    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-    
+    <h5 id="pageAuthor"> Luke Bedrosian</h5>
+    <!--<img id="myPhotos" src="images/IMG_0998.jpeg" width="350" height="250">
+    --> <img id="myPhotos" name="slide" width="400" height="300" />
+   
     <p>*insert adventure text* 
         In Congress, July 4, 1776
 
@@ -96,6 +99,8 @@ In every stage of these Oppressions We have Petitioned for Redress in the most h
 Nor have We been wanting in attentions to our Brittish brethren. We have warned them from time to time of attempts by their legislature to extend an unwarrantable jurisdiction over us. We have reminded them of the circumstances of our emigration and settlement here. We have appealed to their native justice and magnanimity, and we have conjured them by the ties of our common kindred to disavow these usurpations, which, would inevitably interrupt our connections and correspondence. They too have been deaf to the voice of justice and of consanguinity. We must, therefore, acquiesce in the necessity, which denounces our Separation, and hold them, as we hold the rest of mankind, Enemies in War, in Peace Friends.
 
     </p>
+    </div>
+</div>
 
     <!--Weather Api-->
 
