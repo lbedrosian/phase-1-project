@@ -1,0 +1,35 @@
+
+#myHeader {
+    color: #66ff66;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 40px;
+    text-align: right;
+    background-color:#66ccff;
+}
+#liHome {
+    background-color: #ff66bf;
+}
+li{
+    margin: 13px 0;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: purple;
+    text-decoration: none;
+
+  }
+
+p {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+#pageAbout {
+    text-align: right;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+#pageTitle {
+    text-align: right;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+#myPhotos {
+    float: right;
+    display: none;
+} 
+
