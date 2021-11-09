@@ -1,3 +1,4 @@
+/* Nav/Title */
 #myLogo {
     position:absolute;
     left:0;
@@ -11,12 +12,6 @@
     background-color:#66ccff;
     font-weight: bold;
 }
-#liHome {
-   /*
-   background-color: #ff66bf;
-*/
-}
-
 li{
     background-color: rgb(192, 192, 192);
     margin: 30px 0;
@@ -26,13 +21,9 @@ li{
     list-style: none;
     font-weight: 900;
   }
-/*
-#myPost {
-display: none;
-}
-*/
 
 
+/* Body */
 #pageTitle {
     text-align: right;
     font-family: Comic Sans MS, Comic Sans, cursive;
@@ -58,8 +49,17 @@ p {
     float: right;
     
 } 
+
+/* Weather Api */
 .weatherApi {
     text-align: center;
     margin: 30px 0;
     background-color: rgb(228, 227, 227);
 }
+h4 {
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: rgb(241, 233, 117);
+    margin: -5px 0;
+}
+
