@@ -23,28 +23,29 @@ function changeImg(){
 }
 window.onload=changeImg;
 
-var input = document.querySelector('.input_text');
-var main = document.querySelector('#name');
-var temp = document.querySelector('.temp');
-var desc = document.querySelector('.desc');
-var clouds = document.querySelector('.clouds');
-var button= document.querySelector('.submit');
-
-
-button.addEventListener('click', function(name){
-fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=50a7aa80fa492fa92e874d23ad061374')
-.then(response => response.json())
-.then(data => {
-  var tempValue = data['main']['temp'];
-  var nameValue = data['name'];
-  var descValue = data['weather'][0]['description'];
-
-  main.innerHTML = nameValue;
-  desc.innerHTML = "Desc - "+descValue;
-  temp.innerHTML = "Temp - "+tempValue;
-  input.value ="";
-
+fetch('http://api.weatherapi.com/v1/current.json?key=4a4e252153aa48d184e233657210811&q=London&aqi=no')
+.then(Response=>Response.json())
+.then(data=> {
+    console.log(data.location)
+    document.querySelector("#weatherApi").innerText = data.object
 })
 
-.catch(err => alert("Wrong city name!"));
-})
+
+
+//.then(function (Response) {
+//    return Response.json();
+//})
+//.then(function (data) {
+//    for(var i=0; i<data.length; i++) {
+//        document.getElementById("data").innerHTML +=
+//        data[i].id + "=>" + data[i].firstname + " " + data[i].lastname + "<br /";
+//    }
+//})
+//.catch(function (err) {
+ //   console.log(err);
+//});
+
+
+
+//var output = document.getElementById(`output`);
+//output.innerHTML = data;
