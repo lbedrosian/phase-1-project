@@ -63,3 +63,22 @@ h4 {
     margin: -5px 0;
 }
 
+/* Links */
+h2 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+a {
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
+}
+
+#button1 {
+    float: center;
+}
+#button {
+    float: right;
+}
+#clickMe {
+    text-align: center;
+}

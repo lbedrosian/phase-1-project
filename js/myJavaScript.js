@@ -1,3 +1,4 @@
+
 // SlideShow
 var i = 0; 			
 var images = [];	
@@ -36,5 +37,12 @@ fetch('http://api.weatherapi.com/v1/current.json?key=4a4e252153aa48d184e23365721
     document.querySelector("#weatherApi8").innerText = data.current.cloud
     document.querySelector("#weatherApi9").innerText = data.current.feelslike_f
 
-
 })
+
+var clicks = 0;
+
+function onClick() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+};
+
