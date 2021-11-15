@@ -1,8 +1,8 @@
 
 // SlideShow
-var i = 0; 			
-var images = [];	
-var time = 2500;	 
+let i = 0; 			
+let images = [];	
+let time = 2500;	 
 
 images[0] = "images/IMG_0998.jpeg";
 images[1] = "images/IMG_0999.jpeg";
@@ -39,10 +39,15 @@ fetch('http://api.weatherapi.com/v1/current.json?key=4a4e252153aa48d184e23365721
 
 })
 
-var clicks = 0;
+let clicks = 0;
 
-function onClick() {
+function addLike() {
   clicks += 1;
   document.getElementById("clicks").innerHTML = clicks;
 };
+
+function myFunction() {
+    let node = document.getElementById("clickMe")
+    node.innerHTML = "If You are reading this, then I thank you for taking the time to read all that I had to say, Stay well and Safe.";
+}
 

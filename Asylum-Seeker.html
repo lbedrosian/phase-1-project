@@ -3,7 +3,7 @@
     <head>
         <title>Asylum Seeker</title>
         <link rel="stylesheet" href="mystyle.css">
-        <script src="js/myJavaScript.js"></script>    </head>
+   </head>
 <body>
     
     <h1 id="myHeader">Asylum Seeker</h1>
@@ -39,7 +39,7 @@
         
         
         </p>
-        <button class="button1" type="button1" onClick="onClick()">Like Button</button>
+        <button class="button1" type="button1" onCLick="addLike()">Like Button</button>
         <p id="button">Clicks: <a id="clicks">0</a></p>
     </div>
 </div>
@@ -70,14 +70,7 @@
     <a class="links" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=12366">Dolly Sods National Forest USDA Page</a></br>
     <a class="links" href="https://www.youtube.com/watch?v=O1vtZSKr0pE">Youtube Video: "How To Plan Your FIRST Backpacking Trip! | Miranda in the Wild"</a></br>
 
-    <p  id="clickMe">Click Me</p>
-    <script>
-    document.getElementById("clickMe").onclick = function() {myFunction()};
-
-    function myFunction() {
-    document.getElementById("clickMe").innerHTML = "If You are reading this, then I thank you for taking the time to read all that I had to say, Stay well and Safe.";
-    }
-    </script>
-
+    <p  id="clickMe" onClick="myFunction()">Click Me</p>
+    <script src="js/myJavaScript.js"></script> 
 </body>
 </html>
