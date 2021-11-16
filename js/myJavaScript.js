@@ -21,23 +21,28 @@ function changeImg(){
 	}
 	setTimeout("changeImg()", time);
 }
-window.onload=changeImg;
-//Weather Api
-fetch('http://api.weatherapi.com/v1/current.json?key=4a4e252153aa48d184e233657210811&q=26260&aqi=no')
-.then(Response=>Response.json())
-.then(data=> {
-    console.log(data.location)
-    document.querySelector("#weatherApi1").innerText = data.location.name
-    document.querySelector("#weatherApi2").innerText = data.location.region
-    document.querySelector("#weatherApi3").innerText = data.location.country
-    document.querySelector("#weatherApi4").innerText = data.location.localtime
-    document.querySelector("#weatherApi5").innerText = data.current.temp_f
-    document.querySelector("#weatherApi6").innerText = data.current.wind_mph
-    document.querySelector("#weatherApi7").innerText = data.current.humidity
-    document.querySelector("#weatherApi8").innerText = data.current.cloud
-    document.querySelector("#weatherApi9").innerText = data.current.feelslike_f
 
-})
+function loadData() {
+    changeImg();
+    // Weather API
+    fetch('http://api.weatherapi.com/v1/current.json?key=4a4e252153aa48d184e233657210811&q=26260&aqi=no')
+    .then(Response=>Response.json())
+    .then(data=> {
+        console.log(data.location)
+        document.querySelector("#weatherApi1").innerText = data.location.name
+        document.querySelector("#weatherApi2").innerText = data.location.region
+        document.querySelector("#weatherApi3").innerText = data.location.country
+        document.querySelector("#weatherApi4").innerText = data.location.localtime
+        document.querySelector("#weatherApi5").innerText = data.current.temp_f
+        document.querySelector("#weatherApi6").innerText = data.current.wind_mph
+        document.querySelector("#weatherApi7").innerText = data.current.humidity
+        document.querySelector("#weatherApi8").innerText = data.current.cloud
+        document.querySelector("#weatherApi9").innerText = data.current.feelslike_f
+    })
+}
+
+
+window.onload=loadData;
 
 let clicks = 0;
 
